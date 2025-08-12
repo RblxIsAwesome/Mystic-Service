@@ -19,14 +19,15 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Mystic Services",
-  description: "MysticGen | #1 Sites We are the best beaming site out there!",
+  title: "Space Explorer | Cosmic Journey Awaits",
+  description:
+    "Embark on an interstellar adventure through the cosmos. Discover planets, stars, and galaxies in this immersive space experience.",
   icons: {
-    icon: "https://media.discordapp.net/attachments/1401727715564064963/1404962977043447981/mystic_gen_pulse_final.gif?ex=689d193c&is=689bc7bc&hm=9feefea11ae165ed12e420a091d1ea41c16c4f7f6ea5a7b012730e3b15ae3bef&=",
+    icon: "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 fontSize=%2290%22>🚀</text></svg>",
     shortcut:
-      "https://media.discordapp.net/attachments/1401727715564064963/1404962977043447981/mystic_gen_pulse_final.gif?ex=689d193c&is=689bc7bc&hm=9feefea11ae165ed12e420a091d1ea41c16c4f7f6ea5a7b012730e3b15ae3bef&=",
+      "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 fontSize=%2290%22>🚀</text></svg>",
     apple:
-      "https://media.discordapp.net/attachments/1401727715564064963/1404962977043447981/mystic_gen_pulse_final.gif?ex=689d193c&is=689bc7bc&hm=9feefea11ae165ed12e420a091d1ea41c16c4f7f6ea5a7b012730e3b15ae3bef&=",
+      "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 fontSize=%2290%22>🚀</text></svg>",
   },
   generator: "v0.app",
 }
