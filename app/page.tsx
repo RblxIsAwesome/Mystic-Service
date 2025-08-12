@@ -216,10 +216,7 @@ export default function Home() {
                     Services
                   </Button>
                   <Button
-                    as="a"
-                    href="https://discord.gg/xuKueRnjQM"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    onClick={() => window.open("https://discord.gg/xuKueRnjQM", "_blank")}
                     variant="outline"
                     size="sm"
                     className="bg-transparent text-white border-red-500 hover:bg-red-500 hover:text-white transition-colors"
@@ -295,10 +292,7 @@ export default function Home() {
                   <p>Cookies last up to 24hr</p>
                 </div>
                 <Button
-                  as="a"
-                  href="https://www.logged.tg/auth/mysticgenv2"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  onClick={() => window.open("https://www.logged.tg/auth/mysticgenv2", "_blank")}
                   variant="outline"
                   size="sm"
                   className="w-full bg-transparent text-white border-red-400 hover:bg-red-500 hover:text-white hover:shadow-[0_0_20px_rgba(239,68,68,0.4)] transition-all duration-300 flex items-center justify-center"
@@ -325,10 +319,7 @@ export default function Home() {
                   <p>No Stealing Hits</p>
                 </div>
                 <Button
-                  as="a"
-                  href="https://immortal.st/?code=OTYxMzE2NDE4NDQ2NDI2Nzc2Nw=="
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  onClick={() => window.open("https://immortal.st/?code=OTYxMzE2NDE4NDQ2NDI2Nzc2Nw==", "_blank")}
                   variant="outline"
                   size="sm"
                   className="w-full bg-transparent text-white border-red-400 hover:bg-red-500 hover:text-white hover:shadow-[0_0_20px_rgba(239,68,68,0.4)] transition-all duration-300 flex items-center justify-center"
@@ -355,10 +346,7 @@ export default function Home() {
                   <p>Easy To Use</p>
                 </div>
                 <Button
-                  as="a"
-                  href="https://rbx-hyperlink.vercel.app"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  onClick={() => window.open("https://rbx-hyperlink.vercel.app", "_blank")}
                   variant="outline"
                   size="sm"
                   className="w-full bg-transparent text-white border-red-400 hover:bg-red-500 hover:text-white hover:shadow-[0_0_20px_rgba(239,68,68,0.4)] transition-all duration-300 flex items-center justify-center"
