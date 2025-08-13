@@ -295,10 +295,10 @@ export default function Home() {
                   onClick={() => window.open("https://www.logged.tg/auth/mysticgenv2", "_blank")}
                   variant="outline"
                   size="sm"
-                  className="w-full bg-transparent text-white border-red-400 hover:bg-red-500 hover:text-white hover:shadow-[0_0_20px_rgba(239,68,68,0.4)] transition-all duration-300 flex items-center justify-center"
+                  className="bg-transparent text-white border-red-400 hover:bg-red-500 hover:text-white hover:shadow-[0_0_20px_rgba(239,68,68,0.4)] transition-all duration-300 flex items-center justify-center px-4 py-1.5 text-sm"
                 >
                   Create Your Site
-                  <ArrowRight className="h-4 w-4 ml-2" />
+                  <ArrowRight className="h-3 w-3 ml-1.5" />
                 </Button>
               </div>
 
@@ -322,10 +322,10 @@ export default function Home() {
                   onClick={() => window.open("https://immortal.st/?code=OTYxMzE2NDE4NDQ2NDI2Nzc2Nw==", "_blank")}
                   variant="outline"
                   size="sm"
-                  className="w-full bg-transparent text-white border-red-400 hover:bg-red-500 hover:text-white hover:shadow-[0_0_20px_rgba(239,68,68,0.4)] transition-all duration-300 flex items-center justify-center"
+                  className="bg-transparent text-white border-red-400 hover:bg-red-500 hover:text-white hover:shadow-[0_0_20px_rgba(239,68,68,0.4)] transition-all duration-300 flex items-center justify-center px-4 py-1.5 text-sm"
                 >
                   Create Your Site
-                  <ArrowRight className="h-4 w-4 ml-2" />
+                  <ArrowRight className="h-3 w-3 ml-1.5" />
                 </Button>
               </div>
 
@@ -349,10 +349,10 @@ export default function Home() {
                   onClick={() => window.open("https://rbx-hyperlink.vercel.app", "_blank")}
                   variant="outline"
                   size="sm"
-                  className="w-full bg-transparent text-white border-red-400 hover:bg-red-500 hover:text-white hover:shadow-[0_0_20px_rgba(239,68,68,0.4)] transition-all duration-300 flex items-center justify-center"
+                  className="bg-transparent text-white border-red-400 hover:bg-red-500 hover:text-white hover:shadow-[0_0_20px_rgba(239,68,68,0.4)] transition-all duration-300 flex items-center justify-center px-4 py-1.5 text-sm"
                 >
                   Create Your Hyperlink
-                  <ArrowRight className="h-4 w-4 ml-2" />
+                  <ArrowRight className="h-3 w-3 ml-1.5" />
                 </Button>
               </div>
             </div>
