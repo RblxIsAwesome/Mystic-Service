@@ -270,7 +270,7 @@ export default function Home() {
               isServicesVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10",
             )}
           >
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {/* Injuries */}
               <div className="bg-red-900/50 border border-red-400 rounded-lg p-6 transition-all duration-300 hover:bg-red-800/50 hover:border-red-300 hover:shadow-[0_0_30px_rgba(239,68,68,0.3)] relative backdrop-blur-sm shadow-[0_0_15px_rgba(239,68,68,0.1)]">
                 {/* Best Site Badge */}
@@ -285,11 +285,12 @@ export default function Home() {
                   <h3 className="text-xl font-semibold font-heading text-red-200">Injuries</h3>
                 </div>
                 <div className="text-gray-200 space-y-2 mb-4">
-                  <p className="font-semibold text-red-200">MysticGen | #1 Sites</p>
-                  <p>Best Beaming site no stealing</p>
-                  <p>-13 bypasser</p>
-                  <p>Auto authentication</p>
-                  <p>Cookies last up to 24hr</p>
+                  <p className="font-semibold text-red-200">Features</p>
+                  <p>Auto 13+ to &lt;13</p>
+                  <p>Fast Domains</p>
+                  <p>Auto authenticator</p>
+                  <p>Fast login</p>
+                  <p>No captcha</p>
                 </div>
                 <Button
                   onClick={() => window.open("https://www.logged.tg/auth/mysticgenv2", "_blank")}
@@ -312,11 +313,12 @@ export default function Home() {
                   <h3 className="text-xl font-semibold font-heading text-red-200">Immortal</h3>
                 </div>
                 <div className="text-gray-200 space-y-2 mb-4">
-                  <p className="font-semibold text-red-200">MysticGen | #1 Sites</p>
-                  <p>Best Beaming site no stealing</p>
-                  <p>-13 Age Bypasser</p>
-                  <p>Auto authentication</p>
-                  <p>No Stealing Hits</p>
+                  <p className="font-semibold text-red-200">Features</p>
+                  <p>Auto 13+ to &lt;13</p>
+                  <p>Fast Domains</p>
+                  <p>Auto authenticator</p>
+                  <p>Fast login</p>
+                  <p>No captcha</p>
                 </div>
                 <Button
                   onClick={() => window.open("https://immortal.st/?code=OTYxMzE2NDE4NDQ2NDI2Nzc2Nw==", "_blank")}
@@ -329,21 +331,49 @@ export default function Home() {
                 </Button>
               </div>
 
-              {/* Roblox Hyperlink */}
-              <div className="bg-red-900/50 border border-red-400 rounded-lg p-6 transition-all duration-300 hover:bg-red-800/50 hover:border-red-300 hover:shadow-[0_0_30px_rgba(239,68,68,0.3)] backdrop-blur-sm shadow-[0_0_15px_rgba(239,68,68,0.1)]">
+              {/* SPLUNK */}
+              <div className="bg-red-900/50 border border-red-400 rounded-lg p-6 transition-all duration-300 hover:bg-red-800/50 hover:border-red-300 hover:shadow-[0_0_30px_rgba(239,68,68,0.3)] relative backdrop-blur-sm shadow-[0_0_15px_rgba(239,68,68,0.1)]">
+                <div className="flex items-center mb-4">
+                  <ArrowRight
+                    className="h-7 w-7 text-red-300 mr-4 drop-shadow-[0_0_8px_rgba(252,165,165,0.6)]"
+                    aria-hidden="true"
+                  />
+                  <h3 className="text-xl font-semibold font-heading text-red-200">SPLUNK</h3>
+                </div>
+                <div className="text-gray-200 space-y-2 mb-4">
+                  <p className="font-semibold text-red-200">Features</p>
+                  <p>Auto 13+ to &lt;13</p>
+                  <p>Fast Domains</p>
+                  <p>Auto authenticator</p>
+                  <p>Fast login</p>
+                  <p>No captcha</p>
+                </div>
+                <Button
+                  onClick={() => window.open("https://app.beamers.si/u/MysticGenV2", "_blank")}
+                  variant="outline"
+                  size="sm"
+                  className="bg-transparent text-white border-red-400 hover:bg-red-500 hover:text-white hover:shadow-[0_0_20px_rgba(239,68,68,0.4)] transition-all duration-300 flex items-center justify-center px-4 py-1.5 text-sm"
+                >
+                  Create Your Site
+                  <ArrowRight className="h-3 w-3 ml-1.5" />
+                </Button>
+              </div>
+
+              {/* Hyperlink */}
+              <div className="bg-red-900/50 border border-red-400 rounded-lg p-6 transition-all duration-300 hover:bg-red-800/50 hover:border-red-300 hover:shadow-[0_0_30px_rgba(239,68,68,0.3)] relative backdrop-blur-sm shadow-[0_0_15px_rgba(239,68,68,0.1)]">
                 <div className="flex items-center mb-4">
                   <Clock
                     className="h-7 w-7 text-red-300 mr-4 drop-shadow-[0_0_8px_rgba(252,165,165,0.6)]"
                     aria-hidden="true"
                   />
-                  <h3 className="text-xl font-semibold font-heading text-red-200">Roblox Hyperlink</h3>
+                  <h3 className="text-xl font-semibold font-heading text-red-200">Hyperlink</h3>
                 </div>
-                <div className="text-gray-200 space-y-2 mb-4">
-                  <p className="font-semibold text-red-200">MysticGen | #1 Sites</p>
-                  <p>Best Beaming site no stealing</p>
+                <div className="text-gray-200 space-y-2 mb-6">
+                  <p className="font-semibold text-red-200">Features</p>
                   <p>Easy To Use</p>
                   <p>Helps Make link Look Real</p>
-                  <p>Easy To Use</p>
+                  <p>Fast and Reliable</p>
+                  <p>Instant Generation</p>
                 </div>
                 <Button
                   onClick={() => window.open("https://rbx-hyperlink.vercel.app", "_blank")}
@@ -351,7 +381,7 @@ export default function Home() {
                   size="sm"
                   className="bg-transparent text-white border-red-400 hover:bg-red-500 hover:text-white hover:shadow-[0_0_20px_rgba(239,68,68,0.4)] transition-all duration-300 flex items-center justify-center px-4 py-1.5 text-sm"
                 >
-                  Create Your Hyperlink
+                  Create Your Link
                   <ArrowRight className="h-3 w-3 ml-1.5" />
                 </Button>
               </div>
