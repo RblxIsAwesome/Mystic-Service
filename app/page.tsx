@@ -394,6 +394,46 @@ export default function Home() {
                   <ArrowRight className="h-3 w-3 ml-1.5" />
                 </Button>
               </div>
+              
+                            {/* DuelHook Bypass Gen */}
+              <div className="bg-red-900/50 border border-red-400 rounded-lg p-4 transition-all duration-300 hover:bg-red-800/50 hover:border-red-300 hover:shadow-[0_0_30px_rgba(239,68,68,0.3)] relative backdrop-blur-sm shadow-[0_0_15px_rgba(239,68,68,0.1)]">
+                <div className="flex items-center mb-3">
+                  <ArrowRight
+                    className="h-6 w-6 text-red-300 mr-3 drop-shadow-[0_0_8px_rgba(252,165,165,0.6)]"
+                    aria-hidden="true"
+                  />
+                  <h3 className="text-lg font-semibold font-heading text-red-200">DuelHook Bypass Gen</h3>
+                </div>
+                <Button
+                  onClick={() => window.open("https://rbx-tool.com/CreateBypass/BypassGenerator")}
+                  variant="outline"
+                  size="sm"
+                  className="w-full bg-transparent text-white border-red-400 hover:bg-red-500 hover:text-white hover:shadow-[0_0_20px_rgba(239,68,68,0.4)] transition-all duration-300 flex items-center justify-center px-4 py-1.5 text-sm"
+                >
+                  Create Your Site
+                  <ArrowRight className="h-3 w-3 ml-1.5" />
+                </Button>
+              </div>
+              
+                                          {/* IP LOCK BYPASS */}
+              <div className="bg-red-900/50 border border-red-400 rounded-lg p-4 transition-all duration-300 hover:bg-red-800/50 hover:border-red-300 hover:shadow-[0_0_30px_rgba(239,68,68,0.3)] relative backdrop-blur-sm shadow-[0_0_15px_rgba(239,68,68,0.1)]">
+                <div className="flex items-center mb-3">
+                  <ArrowRight
+                    className="h-6 w-6 text-red-300 mr-3 drop-shadow-[0_0_8px_rgba(252,165,165,0.6)]"
+                    aria-hidden="true"
+                  />
+                  <h3 className="text-lg font-semibold font-heading text-red-200">IP Lock Bypass</h3>
+                </div>
+                <Button
+                  onClick={() => window.open("https://rblxrefresh.net/r/MysticV2")}
+                  variant="outline"
+                  size="sm"
+                  className="w-full bg-transparent text-white border-red-400 hover:bg-red-500 hover:text-white hover:shadow-[0_0_20px_rgba(239,68,68,0.4)] transition-all duration-300 flex items-center justify-center px-4 py-1.5 text-sm"
+                >
+                  Create Your Site
+                  <ArrowRight className="h-3 w-3 ml-1.5" />
+                </Button>
+              </div>
             </div>
           </div>
         </div>
