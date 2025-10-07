@@ -350,7 +350,7 @@ export default function Home() {
                   size="sm"
                   className="w-full bg-transparent text-white border-red-400 hover:bg-red-500 hover:text-white hover:shadow-[0_0_20px_rgba(239,68,68,0.4)] transition-all duration-300 flex items-center justify-center px-4 py-1.5 text-sm"
                 >
-                  Hyperlink generator
+                  Hyperlink tool
                   <ArrowRight className="h-3 w-3 ml-1.5" />
                 </Button>
               </div>
