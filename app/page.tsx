@@ -350,7 +350,7 @@ export default function Home() {
                   size="sm"
                   className="w-full bg-transparent text-white border-red-400 hover:bg-red-500 hover:text-white hover:shadow-[0_0_20px_rgba(239,68,68,0.4)] transition-all duration-300 flex items-center justify-center px-4 py-1.5 text-sm"
                 >
-                  Create Your Link
+                  Hyperlink generator
                   <ArrowRight className="h-3 w-3 ml-1.5" />
                 </Button>
               </div>
@@ -370,7 +370,7 @@ export default function Home() {
                   size="sm"
                   className="w-full bg-transparent text-white border-red-400 hover:bg-red-500 hover:text-white hover:shadow-[0_0_20px_rgba(239,68,68,0.4)] transition-all duration-300 flex items-center justify-center px-4 py-1.5 text-sm"
                 >
-                  Create Your Site
+                  AutoHar Gen
                   <ArrowRight className="h-3 w-3 ml-1.5" />
                 </Button>
               </div>
@@ -390,7 +390,7 @@ export default function Home() {
                   disabled
                   className="w-full bg-transparent text-gray-400 border-gray-600 cursor-not-allowed opacity-50 flex items-center justify-center px-4 py-1.5 text-sm"
                 >
-                  Coming Soon
+                  Bypass 2FA
                   <ArrowRight className="h-3 w-3 ml-1.5" />
                 </Button>
               </div>
@@ -410,7 +410,7 @@ export default function Home() {
                   size="sm"
                   className="w-full bg-transparent text-white border-red-400 hover:bg-red-500 hover:text-white hover:shadow-[0_0_20px_rgba(239,68,68,0.4)] transition-all duration-300 flex items-center justify-center px-4 py-1.5 text-sm"
                 >
-                  Create Your Site
+                  Create Bypasser
                   <ArrowRight className="h-3 w-3 ml-1.5" />
                 </Button>
               </div>
@@ -430,7 +430,7 @@ export default function Home() {
                   size="sm"
                   className="w-full bg-transparent text-white border-red-400 hover:bg-red-500 hover:text-white hover:shadow-[0_0_20px_rgba(239,68,68,0.4)] transition-all duration-300 flex items-center justify-center px-4 py-1.5 text-sm"
                 >
-                  Create Your Site
+                  Bypass Ip Lock
                   <ArrowRight className="h-3 w-3 ml-1.5" />
                 </Button>
               </div>
