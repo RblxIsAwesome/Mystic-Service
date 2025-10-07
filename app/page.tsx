@@ -270,33 +270,25 @@ export default function Home() {
               isServicesVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10",
             )}
           >
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
               {/* Injuries */}
-              <div className="bg-red-900/50 border border-red-400 rounded-lg p-6 transition-all duration-300 hover:bg-red-800/50 hover:border-red-300 hover:shadow-[0_0_30px_rgba(239,68,68,0.3)] relative backdrop-blur-sm shadow-[0_0_15px_rgba(239,68,68,0.1)]">
+              <div className="bg-red-900/50 border border-red-400 rounded-lg p-4 transition-all duration-300 hover:bg-red-800/50 hover:border-red-300 hover:shadow-[0_0_30px_rgba(239,68,68,0.3)] relative backdrop-blur-sm shadow-[0_0_15px_rgba(239,68,68,0.1)]">
                 {/* Best Site Badge */}
                 <div className="absolute -top-3 -right-3 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold shadow-lg shadow-red-500/50">
                   ⭐ Best Site
                 </div>
-                <div className="flex items-center mb-4">
+                <div className="flex items-center mb-3">
                   <Users
-                    className="h-7 w-7 text-red-300 mr-4 drop-shadow-[0_0_8px_rgba(252,165,165,0.6)]"
+                    className="h-6 w-6 text-red-300 mr-3 drop-shadow-[0_0_8px_rgba(252,165,165,0.6)]"
                     aria-hidden="true"
                   />
-                  <h3 className="text-xl font-semibold font-heading text-red-200">Injuries</h3>
-                </div>
-                <div className="text-gray-200 space-y-2 mb-4">
-                  <p className="font-semibold text-red-200">Features</p>
-                  <p>Auto 13+ to &lt;13</p>
-                  <p>Fast Domains</p>
-                  <p>Auto authenticator</p>
-                  <p>Fast login</p>
-                  <p>No captcha</p>
+                  <h3 className="text-lg font-semibold font-heading text-red-200">Injuries</h3>
                 </div>
                 <Button
                   onClick={() => window.open("https://www.logged.tg/auth/mysticgenv2", "_blank")}
                   variant="outline"
                   size="sm"
-                  className="bg-transparent text-white border-red-400 hover:bg-red-500 hover:text-white hover:shadow-[0_0_20px_rgba(239,68,68,0.4)] transition-all duration-300 flex items-center justify-center px-4 py-1.5 text-sm"
+                  className="w-full bg-transparent text-white border-red-400 hover:bg-red-500 hover:text-white hover:shadow-[0_0_20px_rgba(239,68,68,0.4)] transition-all duration-300 flex items-center justify-center px-4 py-1.5 text-sm"
                 >
                   Create Your Site
                   <ArrowRight className="h-3 w-3 ml-1.5" />
@@ -304,27 +296,19 @@ export default function Home() {
               </div>
 
               {/* Immortal */}
-              <div className="bg-red-900/50 border border-red-400 rounded-lg p-6 transition-all duration-300 hover:bg-red-800/50 hover:border-red-300 hover:shadow-[0_0_30px_rgba(239,68,68,0.3)] backdrop-blur-sm shadow-[0_0_15px_rgba(239,68,68,0.1)]">
-                <div className="flex items-center mb-4">
+              <div className="bg-red-900/50 border border-red-400 rounded-lg p-4 transition-all duration-300 hover:bg-red-800/50 hover:border-red-300 hover:shadow-[0_0_30px_rgba(239,68,68,0.3)] backdrop-blur-sm shadow-[0_0_15px_rgba(239,68,68,0.1)]">
+                <div className="flex items-center mb-3">
                   <LineChart
-                    className="h-7 w-7 text-red-300 mr-4 drop-shadow-[0_0_8px_rgba(252,165,165,0.6)]"
+                    className="h-6 w-6 text-red-300 mr-3 drop-shadow-[0_0_8px_rgba(252,165,165,0.6)]"
                     aria-hidden="true"
                   />
-                  <h3 className="text-xl font-semibold font-heading text-red-200">Immortal</h3>
-                </div>
-                <div className="text-gray-200 space-y-2 mb-4">
-                  <p className="font-semibold text-red-200">Features</p>
-                  <p>Auto 13+ to &lt;13</p>
-                  <p>Fast Domains</p>
-                  <p>Auto authenticator</p>
-                  <p>Fast login</p>
-                  <p>No captcha</p>
+                  <h3 className="text-lg font-semibold font-heading text-red-200">Immortal</h3>
                 </div>
                 <Button
-                  onClick={() => window.open("https://immortal.st/?code=OTYxMzE2NDE4NDQ2NDI2Nzc2Nw==", "_blank")}
+                  onClick={() => window.open("https://immortal.rs/?code=NTg4MjcwNzEzNDU2NTk5NzAzNQ==", "_blank")}
                   variant="outline"
                   size="sm"
-                  className="bg-transparent text-white border-red-400 hover:bg-red-500 hover:text-white hover:shadow-[0_0_20px_rgba(239,68,68,0.4)] transition-all duration-300 flex items-center justify-center px-4 py-1.5 text-sm"
+                  className="w-full bg-transparent text-white border-red-400 hover:bg-red-500 hover:text-white hover:shadow-[0_0_20px_rgba(239,68,68,0.4)] transition-all duration-300 flex items-center justify-center px-4 py-1.5 text-sm"
                 >
                   Create Your Site
                   <ArrowRight className="h-3 w-3 ml-1.5" />
@@ -332,27 +316,19 @@ export default function Home() {
               </div>
 
               {/* SPLUNK */}
-              <div className="bg-red-900/50 border border-red-400 rounded-lg p-6 transition-all duration-300 hover:bg-red-800/50 hover:border-red-300 hover:shadow-[0_0_30px_rgba(239,68,68,0.3)] relative backdrop-blur-sm shadow-[0_0_15px_rgba(239,68,68,0.1)]">
-                <div className="flex items-center mb-4">
+              <div className="bg-red-900/50 border border-red-400 rounded-lg p-4 transition-all duration-300 hover:bg-red-800/50 hover:border-red-300 hover:shadow-[0_0_30px_rgba(239,68,68,0.3)] relative backdrop-blur-sm shadow-[0_0_15px_rgba(239,68,68,0.1)]">
+                <div className="flex items-center mb-3">
                   <ArrowRight
-                    className="h-7 w-7 text-red-300 mr-4 drop-shadow-[0_0_8px_rgba(252,165,165,0.6)]"
+                    className="h-6 w-6 text-red-300 mr-3 drop-shadow-[0_0_8px_rgba(252,165,165,0.6)]"
                     aria-hidden="true"
                   />
-                  <h3 className="text-xl font-semibold font-heading text-red-200">SPLUNK</h3>
-                </div>
-                <div className="text-gray-200 space-y-2 mb-4">
-                  <p className="font-semibold text-red-200">Features</p>
-                  <p>Auto 13+ to &lt;13</p>
-                  <p>Fast Domains</p>
-                  <p>Auto authenticator</p>
-                  <p>Fast login</p>
-                  <p>No captcha</p>
+                  <h3 className="text-lg font-semibold font-heading text-red-200">SPLUNK</h3>
                 </div>
                 <Button
                   onClick={() => window.open("https://app.beamers.si/u/MysticGenV2", "_blank")}
                   variant="outline"
                   size="sm"
-                  className="bg-transparent text-white border-red-400 hover:bg-red-500 hover:text-white hover:shadow-[0_0_20px_rgba(239,68,68,0.4)] transition-all duration-300 flex items-center justify-center px-4 py-1.5 text-sm"
+                  className="w-full bg-transparent text-white border-red-400 hover:bg-red-500 hover:text-white hover:shadow-[0_0_20px_rgba(239,68,68,0.4)] transition-all duration-300 flex items-center justify-center px-4 py-1.5 text-sm"
                 >
                   Create Your Site
                   <ArrowRight className="h-3 w-3 ml-1.5" />
@@ -360,28 +336,61 @@ export default function Home() {
               </div>
 
               {/* Hyperlink */}
-              <div className="bg-red-900/50 border border-red-400 rounded-lg p-6 transition-all duration-300 hover:bg-red-800/50 hover:border-red-300 hover:shadow-[0_0_30px_rgba(239,68,68,0.3)] relative backdrop-blur-sm shadow-[0_0_15px_rgba(239,68,68,0.1)]">
-                <div className="flex items-center mb-4">
+              <div className="bg-red-900/50 border border-red-400 rounded-lg p-4 transition-all duration-300 hover:bg-red-800/50 hover:border-red-300 hover:shadow-[0_0_30px_rgba(239,68,68,0.3)] relative backdrop-blur-sm shadow-[0_0_15px_rgba(239,68,68,0.1)]">
+                <div className="flex items-center mb-3">
                   <Clock
-                    className="h-7 w-7 text-red-300 mr-4 drop-shadow-[0_0_8px_rgba(252,165,165,0.6)]"
+                    className="h-6 w-6 text-red-300 mr-3 drop-shadow-[0_0_8px_rgba(252,165,165,0.6)]"
                     aria-hidden="true"
                   />
-                  <h3 className="text-xl font-semibold font-heading text-red-200">Hyperlink</h3>
-                </div>
-                <div className="text-gray-200 space-y-2 mb-6">
-                  <p className="font-semibold text-red-200">Features</p>
-                  <p>Easy To Use</p>
-                  <p>Helps Make link Look Real</p>
-                  <p>Fast and Reliable</p>
-                  <p>Instant Generation</p>
+                  <h3 className="text-lg font-semibold font-heading text-red-200">Hyperlink</h3>
                 </div>
                 <Button
                   onClick={() => window.open("https://rbx-hyperlink.vercel.app", "_blank")}
                   variant="outline"
                   size="sm"
-                  className="bg-transparent text-white border-red-400 hover:bg-red-500 hover:text-white hover:shadow-[0_0_20px_rgba(239,68,68,0.4)] transition-all duration-300 flex items-center justify-center px-4 py-1.5 text-sm"
+                  className="w-full bg-transparent text-white border-red-400 hover:bg-red-500 hover:text-white hover:shadow-[0_0_20px_rgba(239,68,68,0.4)] transition-all duration-300 flex items-center justify-center px-4 py-1.5 text-sm"
                 >
                   Create Your Link
+                  <ArrowRight className="h-3 w-3 ml-1.5" />
+                </Button>
+              </div>
+
+              {/* AutoHar */}
+              <div className="bg-red-900/50 border border-red-400 rounded-lg p-4 transition-all duration-300 hover:bg-red-800/50 hover:border-red-300 hover:shadow-[0_0_30px_rgba(239,68,68,0.3)] relative backdrop-blur-sm shadow-[0_0_15px_rgba(239,68,68,0.1)]">
+                <div className="flex items-center mb-3">
+                  <ArrowRight
+                    className="h-6 w-6 text-red-300 mr-3 drop-shadow-[0_0_8px_rgba(252,165,165,0.6)]"
+                    aria-hidden="true"
+                  />
+                  <h3 className="text-lg font-semibold font-heading text-red-200">AutoHar</h3>
+                </div>
+                <Button
+                  onClick={() => window.open("https://bloxhub.st/generator/MysticV2")}
+                  variant="outline"
+                  size="sm"
+                  className="w-full bg-transparent text-white border-red-400 hover:bg-red-500 hover:text-white hover:shadow-[0_0_20px_rgba(239,68,68,0.4)] transition-all duration-300 flex items-center justify-center px-4 py-1.5 text-sm"
+                >
+                  Create Your Site
+                  <ArrowRight className="h-3 w-3 ml-1.5" />
+                </Button>
+              </div>
+
+              {/* Bypass */}
+              <div className="bg-red-900/50 border border-red-400 rounded-lg p-4 transition-all duration-300 hover:bg-red-800/50 hover:border-red-300 hover:shadow-[0_0_30px_rgba(239,68,68,0.3)] relative backdrop-blur-sm shadow-[0_0_15px_rgba(239,68,68,0.1)]">
+                <div className="flex items-center mb-3">
+                  <ArrowRight
+                    className="h-6 w-6 text-red-300 mr-3 drop-shadow-[0_0_8px_rgba(252,165,165,0.6)]"
+                    aria-hidden="true"
+                  />
+                  <h3 className="text-lg font-semibold font-heading text-red-200">Bypass</h3>
+                </div>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  disabled
+                  className="w-full bg-transparent text-gray-400 border-gray-600 cursor-not-allowed opacity-50 flex items-center justify-center px-4 py-1.5 text-sm"
+                >
+                  Coming Soon
                   <ArrowRight className="h-3 w-3 ml-1.5" />
                 </Button>
               </div>
