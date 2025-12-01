@@ -345,7 +345,7 @@ export default function Home() {
                   <h3 className="text-lg font-semibold font-heading text-red-200">Hyperlink</h3>
                 </div>
                 <Button
-                  onClick={() => window.open("https://rbx-hyperlink.vercel.app", "_blank")}
+                  onClick={() => window.open("https://hyperlink-beta.vercel.app", "_blank")}
                   variant="outline"
                   size="sm"
                   className="w-full bg-transparent text-white border-red-400 hover:bg-red-500 hover:text-white hover:shadow-[0_0_20px_rgba(239,68,68,0.4)] transition-all duration-300 flex items-center justify-center px-4 py-1.5 text-sm"
