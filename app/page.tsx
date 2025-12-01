@@ -270,7 +270,7 @@ export default function Home() {
               isServicesVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10",
             )}
           >
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {/* Injuries */}
               <div className="bg-red-900/50 border border-red-400 rounded-lg p-4 transition-all duration-300 hover:bg-red-800/50 hover:border-red-300 hover:shadow-[0_0_30px_rgba(239,68,68,0.3)] relative backdrop-blur-sm shadow-[0_0_15px_rgba(239,68,68,0.1)]">
                 {/* Best Site Badge */}
@@ -351,86 +351,6 @@ export default function Home() {
                   className="w-full bg-transparent text-white border-red-400 hover:bg-red-500 hover:text-white hover:shadow-[0_0_20px_rgba(239,68,68,0.4)] transition-all duration-300 flex items-center justify-center px-4 py-1.5 text-sm"
                 >
                   Hyperlink tool
-                  <ArrowRight className="h-3 w-3 ml-1.5" />
-                </Button>
-              </div>
-
-              {/* AutoHar */}
-              <div className="bg-red-900/50 border border-red-400 rounded-lg p-4 transition-all duration-300 hover:bg-red-800/50 hover:border-red-300 hover:shadow-[0_0_30px_rgba(239,68,68,0.3)] relative backdrop-blur-sm shadow-[0_0_15px_rgba(239,68,68,0.1)]">
-                <div className="flex items-center mb-3">
-                  <ArrowRight
-                    className="h-6 w-6 text-red-300 mr-3 drop-shadow-[0_0_8px_rgba(252,165,165,0.6)]"
-                    aria-hidden="true"
-                  />
-                  <h3 className="text-lg font-semibold font-heading text-red-200">AutoHar</h3>
-                </div>
-                <Button
-                  onClick={() => window.open("https://bloxhub.st/generator/MysticV2")}
-                  variant="outline"
-                  size="sm"
-                  className="w-full bg-transparent text-white border-red-400 hover:bg-red-500 hover:text-white hover:shadow-[0_0_20px_rgba(239,68,68,0.4)] transition-all duration-300 flex items-center justify-center px-4 py-1.5 text-sm"
-                >
-                  AutoHar Gen
-                  <ArrowRight className="h-3 w-3 ml-1.5" />
-                </Button>
-              </div>
-
-              {/* Bypass */}
-              <div className="bg-red-900/50 border border-red-400 rounded-lg p-4 transition-all duration-300 hover:bg-red-800/50 hover:border-red-300 hover:shadow-[0_0_30px_rgba(239,68,68,0.3)] relative backdrop-blur-sm shadow-[0_0_15px_rgba(239,68,68,0.1)]">
-                <div className="flex items-center mb-3">
-                  <ArrowRight
-                    className="h-6 w-6 text-red-300 mr-3 drop-shadow-[0_0_8px_rgba(252,165,165,0.6)]"
-                    aria-hidden="true"
-                  />
-                  <h3 className="text-lg font-semibold font-heading text-red-200">Bypass</h3>
-                </div>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  disabled
-                  className="w-full bg-transparent text-gray-400 border-gray-600 cursor-not-allowed opacity-50 flex items-center justify-center px-4 py-1.5 text-sm"
-                >
-                  Bypass 2FA
-                  <ArrowRight className="h-3 w-3 ml-1.5" />
-                </Button>
-              </div>
-              
-                            {/* DuelHook Bypass Gen */}
-              <div className="bg-red-900/50 border border-red-400 rounded-lg p-4 transition-all duration-300 hover:bg-red-800/50 hover:border-red-300 hover:shadow-[0_0_30px_rgba(239,68,68,0.3)] relative backdrop-blur-sm shadow-[0_0_15px_rgba(239,68,68,0.1)]">
-                <div className="flex items-center mb-3">
-                  <ArrowRight
-                    className="h-6 w-6 text-red-300 mr-3 drop-shadow-[0_0_8px_rgba(252,165,165,0.6)]"
-                    aria-hidden="true"
-                  />
-                  <h3 className="text-lg font-semibold font-heading text-red-200">DuelHook Bypass Gen</h3>
-                </div>
-                <Button
-                  onClick={() => window.open("https://rbx-tool.com/CreateBypass/BypassGenerator")}
-                  variant="outline"
-                  size="sm"
-                  className="w-full bg-transparent text-white border-red-400 hover:bg-red-500 hover:text-white hover:shadow-[0_0_20px_rgba(239,68,68,0.4)] transition-all duration-300 flex items-center justify-center px-4 py-1.5 text-sm"
-                >
-                  Create Bypasser
-                  <ArrowRight className="h-3 w-3 ml-1.5" />
-                </Button>
-              </div>
-              
-                                          {/* IP LOCK BYPASS */}
-              <div className="bg-red-900/50 border border-red-400 rounded-lg p-4 transition-all duration-300 hover:bg-red-800/50 hover:border-red-300 hover:shadow-[0_0_30px_rgba(239,68,68,0.3)] relative backdrop-blur-sm shadow-[0_0_15px_rgba(239,68,68,0.1)]">
-                <div className="flex items-center mb-3">
-                  <ArrowRight
-                    className="h-6 w-6 text-red-300 mr-3 drop-shadow-[0_0_8px_rgba(252,165,165,0.6)]"
-                    aria-hidden="true"
-                  />
-                  <h3 className="text-lg font-semibold font-heading text-red-200">IP Lock Bypass</h3>
-                </div>
-                <Button
-                  onClick={() => window.open("https://rblxrefresh.net/r/MysticV2")}
-                  variant="outline"
-                  size="sm"
-                  className="w-full bg-transparent text-white border-red-400 hover:bg-red-500 hover:text-white hover:shadow-[0_0_20px_rgba(239,68,68,0.4)] transition-all duration-300 flex items-center justify-center px-4 py-1.5 text-sm"
-                >
-                  Bypass Ip Lock
                   <ArrowRight className="h-3 w-3 ml-1.5" />
                 </Button>
               </div>
