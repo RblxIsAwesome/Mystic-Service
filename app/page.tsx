@@ -1,6 +1,6 @@
 "use client"
 import { StarField } from "@/components/star-field"
-import { ChevronDown, Users, LineChart, Clock, ArrowRight } from "lucide-react"
+import { Users, LineChart, Clock, ArrowRight } from "lucide-react"
 import { ChatbotModal } from "@/components/chatbot-modal"
 import { useState, useEffect, useRef } from "react"
 import { cn } from "@/lib/utils"
@@ -202,48 +202,25 @@ export default function Home() {
             <div className="px-6 py-4 inline-block relative">
               <h1 className="text-4xl font-bold text-white md:text-6xl font-heading">
                 {typewriterText}
-                {!isTypewriterComplete && <span className="animate-pulse text-red-500">|</span>}
+                {!isTypewriterComplete && <span className="animate-pulse text-yellow-500">|</span>}
               </h1>
               <div className="mt-4 flex flex-col items-center gap-4">
                 <p className="text-lg text-gray-300 md:text-xl px-4 max-w-xs mx-auto md:max-w-none">#1 Gen Sites</p>
                 <div className="flex gap-3">
                   <Button
-                    onClick={scrollToServices}
-                    variant="outline"
-                    size="sm"
-                    className="bg-transparent text-white border-red-500 hover:bg-red-500 hover:text-white transition-colors"
-                  >
-                    Services
-                  </Button>
-                  <Button
                     onClick={() => window.open("https://discord.gg/xuKueRnjQM", "_blank")}
                     variant="outline"
                     size="sm"
-                    className="bg-transparent text-white border-red-500 hover:bg-red-500 hover:text-white transition-colors"
+                    className="bg-transparent text-white border-yellow-500 hover:bg-yellow-500 hover:text-black transition-colors"
                   >
                     Contact
                   </Button>
                 </div>
-                <div className="text-sm text-red-400 font-mono">
+                <div className="text-sm text-yellow-400 font-mono">
                   MysticGen | #1 Sites We are the best beaming site out there!
                 </div>
               </div>
             </div>
-          </div>
-
-          <div
-            className="absolute bottom-20 animate-bounce cursor-pointer"
-            onClick={scrollToServices}
-            role="button"
-            aria-label="Scroll to about section"
-            tabIndex={0}
-            onKeyDown={(e) => {
-              if (e.key === "Enter" || e.key === " ") {
-                scrollToServices()
-              }
-            }}
-          >
-            <ChevronDown className="h-8 w-8 text-red-500" />
           </div>
         </div>
       </section>
@@ -251,13 +228,13 @@ export default function Home() {
       <section
         ref={servicesSectionRef}
         id="services"
-        className="py-20 bg-gradient-to-b from-black via-red-950 to-red-800 text-white"
+        className="py-4 bg-gradient-to-b from-black via-yellow-950 to-yellow-800 text-white"
       >
         <div className="container mx-auto px-4">
           <h2
             ref={servicesTitleRef}
             className={cn(
-              "mb-12 text-center text-3xl font-bold font-heading transition-all duration-1000 ease-out text-red-300",
+              "mb-8 text-center text-3xl font-bold font-heading transition-all duration-1000 ease-out text-yellow-300",
               isServicesTitleVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10",
             )}
           >
@@ -272,23 +249,23 @@ export default function Home() {
           >
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {/* Injuries */}
-              <div className="bg-red-900/50 border border-red-400 rounded-lg p-4 transition-all duration-300 hover:bg-red-800/50 hover:border-red-300 hover:shadow-[0_0_30px_rgba(239,68,68,0.3)] relative backdrop-blur-sm shadow-[0_0_15px_rgba(239,68,68,0.1)]">
+              <div className="bg-yellow-900/50 border border-yellow-400 rounded-lg p-4 transition-all duration-300 hover:bg-yellow-800/50 hover:border-yellow-300 hover:shadow-[0_0_30px_rgba(251,191,36,0.3)] relative backdrop-blur-sm shadow-[0_0_15px_rgba(251,191,36,0.1)]">
                 {/* Best Site Badge */}
-                <div className="absolute -top-3 -right-3 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold shadow-lg shadow-red-500/50">
+                <div className="absolute -top-3 -right-3 bg-yellow-500 text-black px-3 py-1 rounded-full text-sm font-semibold shadow-lg shadow-yellow-500/50">
                   ⭐ Best Site
                 </div>
                 <div className="flex items-center mb-3">
                   <Users
-                    className="h-6 w-6 text-red-300 mr-3 drop-shadow-[0_0_8px_rgba(252,165,165,0.6)]"
+                    className="h-6 w-6 text-yellow-300 mr-3 drop-shadow-[0_0_8px_rgba(253,224,71,0.6)]"
                     aria-hidden="true"
                   />
-                  <h3 className="text-lg font-semibold font-heading text-red-200">Injuries</h3>
+                  <h3 className="text-lg font-semibold font-heading text-yellow-200">Injuries</h3>
                 </div>
                 <Button
                   onClick={() => window.open("https://www.logged.tg/auth/mysticgenv2", "_blank")}
                   variant="outline"
                   size="sm"
-                  className="w-full bg-transparent text-white border-red-400 hover:bg-red-500 hover:text-white hover:shadow-[0_0_20px_rgba(239,68,68,0.4)] transition-all duration-300 flex items-center justify-center px-4 py-1.5 text-sm"
+                  className="w-full bg-transparent text-white border-yellow-400 hover:bg-yellow-500 hover:text-black hover:shadow-[0_0_20px_rgba(251,191,36,0.4)] transition-all duration-300 flex items-center justify-center px-4 py-1.5 text-sm"
                 >
                   Create Your Site
                   <ArrowRight className="h-3 w-3 ml-1.5" />
@@ -296,19 +273,19 @@ export default function Home() {
               </div>
 
               {/* Immortal */}
-              <div className="bg-red-900/50 border border-red-400 rounded-lg p-4 transition-all duration-300 hover:bg-red-800/50 hover:border-red-300 hover:shadow-[0_0_30px_rgba(239,68,68,0.3)] backdrop-blur-sm shadow-[0_0_15px_rgba(239,68,68,0.1)]">
+              <div className="bg-yellow-900/50 border border-yellow-400 rounded-lg p-4 transition-all duration-300 hover:bg-yellow-800/50 hover:border-yellow-300 hover:shadow-[0_0_30px_rgba(251,191,36,0.3)] backdrop-blur-sm shadow-[0_0_15px_rgba(251,191,36,0.1)]">
                 <div className="flex items-center mb-3">
                   <LineChart
-                    className="h-6 w-6 text-red-300 mr-3 drop-shadow-[0_0_8px_rgba(252,165,165,0.6)]"
+                    className="h-6 w-6 text-yellow-300 mr-3 drop-shadow-[0_0_8px_rgba(253,224,71,0.6)]"
                     aria-hidden="true"
                   />
-                  <h3 className="text-lg font-semibold font-heading text-red-200">Immortal</h3>
+                  <h3 className="text-lg font-semibold font-heading text-yellow-200">Immortal</h3>
                 </div>
                 <Button
                   onClick={() => window.open("https://immortal.rs/?code=NTg4MjcwNzEzNDU2NTk5NzAzNQ==", "_blank")}
                   variant="outline"
                   size="sm"
-                  className="w-full bg-transparent text-white border-red-400 hover:bg-red-500 hover:text-white hover:shadow-[0_0_20px_rgba(239,68,68,0.4)] transition-all duration-300 flex items-center justify-center px-4 py-1.5 text-sm"
+                  className="w-full bg-transparent text-white border-yellow-400 hover:bg-yellow-500 hover:text-black hover:shadow-[0_0_20px_rgba(251,191,36,0.4)] transition-all duration-300 flex items-center justify-center px-4 py-1.5 text-sm"
                 >
                   Create Your Site
                   <ArrowRight className="h-3 w-3 ml-1.5" />
@@ -316,19 +293,19 @@ export default function Home() {
               </div>
 
               {/* SPLUNK */}
-              <div className="bg-red-900/50 border border-red-400 rounded-lg p-4 transition-all duration-300 hover:bg-red-800/50 hover:border-red-300 hover:shadow-[0_0_30px_rgba(239,68,68,0.3)] relative backdrop-blur-sm shadow-[0_0_15px_rgba(239,68,68,0.1)]">
+              <div className="bg-yellow-900/50 border border-yellow-400 rounded-lg p-4 transition-all duration-300 hover:bg-yellow-800/50 hover:border-yellow-300 hover:shadow-[0_0_30px_rgba(251,191,36,0.3)] relative backdrop-blur-sm shadow-[0_0_15px_rgba(251,191,36,0.1)]">
                 <div className="flex items-center mb-3">
                   <ArrowRight
-                    className="h-6 w-6 text-red-300 mr-3 drop-shadow-[0_0_8px_rgba(252,165,165,0.6)]"
+                    className="h-6 w-6 text-yellow-300 mr-3 drop-shadow-[0_0_8px_rgba(253,224,71,0.6)]"
                     aria-hidden="true"
                   />
-                  <h3 className="text-lg font-semibold font-heading text-red-200">SPLUNK</h3>
+                  <h3 className="text-lg font-semibold font-heading text-yellow-200">SPLUNK</h3>
                 </div>
                 <Button
                   onClick={() => window.open("https://app.beamers.si/u/MysticGenV2", "_blank")}
                   variant="outline"
                   size="sm"
-                  className="w-full bg-transparent text-white border-red-400 hover:bg-red-500 hover:text-white hover:shadow-[0_0_20px_rgba(239,68,68,0.4)] transition-all duration-300 flex items-center justify-center px-4 py-1.5 text-sm"
+                  className="w-full bg-transparent text-white border-yellow-400 hover:bg-yellow-500 hover:text-black hover:shadow-[0_0_20px_rgba(251,191,36,0.4)] transition-all duration-300 flex items-center justify-center px-4 py-1.5 text-sm"
                 >
                   Create Your Site
                   <ArrowRight className="h-3 w-3 ml-1.5" />
@@ -336,19 +313,19 @@ export default function Home() {
               </div>
 
               {/* Hyperlink */}
-              <div className="bg-red-900/50 border border-red-400 rounded-lg p-4 transition-all duration-300 hover:bg-red-800/50 hover:border-red-300 hover:shadow-[0_0_30px_rgba(239,68,68,0.3)] relative backdrop-blur-sm shadow-[0_0_15px_rgba(239,68,68,0.1)]">
+              <div className="bg-yellow-900/50 border border-yellow-400 rounded-lg p-4 transition-all duration-300 hover:bg-yellow-800/50 hover:border-yellow-300 hover:shadow-[0_0_30px_rgba(251,191,36,0.3)] relative backdrop-blur-sm shadow-[0_0_15px_rgba(251,191,36,0.1)]">
                 <div className="flex items-center mb-3">
                   <Clock
-                    className="h-6 w-6 text-red-300 mr-3 drop-shadow-[0_0_8px_rgba(252,165,165,0.6)]"
+                    className="h-6 w-6 text-yellow-300 mr-3 drop-shadow-[0_0_8px_rgba(253,224,71,0.6)]"
                     aria-hidden="true"
                   />
-                  <h3 className="text-lg font-semibold font-heading text-red-200">Hyperlink</h3>
+                  <h3 className="text-lg font-semibold font-heading text-yellow-200">Hyperlink</h3>
                 </div>
                 <Button
                   onClick={() => window.open("https://hyperlink-beta.vercel.app", "_blank")}
                   variant="outline"
                   size="sm"
-                  className="w-full bg-transparent text-white border-red-400 hover:bg-red-500 hover:text-white hover:shadow-[0_0_20px_rgba(239,68,68,0.4)] transition-all duration-300 flex items-center justify-center px-4 py-1.5 text-sm"
+                  className="w-full bg-transparent text-white border-yellow-400 hover:bg-yellow-500 hover:text-black hover:shadow-[0_0_20px_rgba(251,191,36,0.4)] transition-all duration-300 flex items-center justify-center px-4 py-1.5 text-sm"
                 >
                   Hyperlink tool
                   <ArrowRight className="h-3 w-3 ml-1.5" />
