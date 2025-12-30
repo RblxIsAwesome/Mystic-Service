@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+/* Keep your palette but add a few disciplined tokens for glow + surfaces. */
 :root {
   --background: hsl(0 0% 0%);
   --foreground: hsl(0 0% 100%);
@@ -29,7 +30,13 @@
   --input: hsl(0 0% 15%);
   --ring: hsl(45 93% 58%);
 
-  --radius: 0.5rem;
+  --radius: 0.75rem;
+
+  /* Added: disciplined glow + surface helpers */
+  --glow-primary: 251 191 36; /* rgb triplet */
+  --surface-1: rgba(0, 0, 0, 0.32);
+  --surface-2: rgba(0, 0, 0, 0.46);
+  --surface-border: rgba(251, 191, 36, 0.22);
 }
 
 .dark {
@@ -89,9 +96,14 @@
   border-color: var(--border);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--background);
   color: var(--foreground);
+
   /* Hide scrollbar for Chrome, Safari and Opera */
   &::-webkit-scrollbar {
     display: none;
@@ -99,4 +111,14 @@ body {
   /* Hide scrollbar for IE, Edge and Firefox */
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+/* Smooth motion preference: reduce jumpiness where possible */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 1ms !important;
+    scroll-behavior: auto !important;
+  }
 }
