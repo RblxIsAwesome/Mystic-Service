@@ -18,7 +18,7 @@ const services: Service[] = [
   {
     key: "injuries",
     title: "Injuries",
-    href: "https://www.logged.tg/auth/mysticgenv2",
+    href: "https://www.logged.tg/auth/mystic",
     icon: Users,
     cta: "Create Your Site",
     featured: true,
