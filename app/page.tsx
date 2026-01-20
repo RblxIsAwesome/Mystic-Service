@@ -42,17 +42,11 @@ const services: Service[] = [
   {
     key: "bypass-tool",
     title: "Bypass Tool",
-    href: "https://rbx-tool.com/BypassAge/MysticGen",
+    href: "https://rbxbypasser.com/d/BypasserV2",
     icon: Clock,
     cta: "Bypass Tool",
   },
-  {
-    key: "dualhook-bypass",
-    title: "Create Dualhook Bypass",
-    href: "https://rbx-tool.com/CreateBypass/MysticGen",
-    icon: Clock,
-    cta: "Create Your Site",
-  },
+
   {
     key: "Cookie Refresher",
     title: "Gambling Site for rbx",
