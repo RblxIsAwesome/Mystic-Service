@@ -20,7 +20,7 @@ const services: Service[] = [
   {
     key: "injuries",
     title: "Injuries",
-    href: "https://www.logged.tg/auth/mystic",
+    href: "https://www.logged.tg/auth/mysticv2",
     icon: Users,
     cta: "Create Your Site",
     featured: true,
@@ -42,7 +42,7 @@ const services: Service[] = [
   {
     key: "bypass-tool",
     title: "Bypass Tool",
-    href: "https://rbxbypasser.com/d/BypasserV2",
+    href: "https://error.org",
     icon: Clock,
     cta: "Bypass Tool",
   },
