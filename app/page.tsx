@@ -28,7 +28,7 @@ const services: Service[] = [
   {
     key: "immortal",
     title: "Immortal",
-    href: "https://immortal.rs/?code=NTg4MjcwNzEzNDU2NTk5NzAzNQ==",
+    href: "https://immortal.cool/?code=NTg4MjcwNzEzNDU2NTk5NzAzNQ==",
     icon: LineChart,
     cta: "Create Your Site",
   },
