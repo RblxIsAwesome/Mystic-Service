@@ -52,11 +52,11 @@ export function AnimatedParticles() {
         ctx.beginPath()
         ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2)
 
-        // Glow effect
+        // Glow effect - Red theme
         const gradient = ctx.createRadialGradient(particle.x, particle.y, 0, particle.x, particle.y, particle.size * 3)
-        gradient.addColorStop(0, `rgba(147, 197, 253, ${particle.opacity})`)
-        gradient.addColorStop(0.5, `rgba(96, 165, 250, ${particle.opacity * 0.5})`)
-        gradient.addColorStop(1, "rgba(59, 130, 246, 0)")
+        gradient.addColorStop(0, `rgba(255, 100, 100, ${particle.opacity})`)
+        gradient.addColorStop(0.5, `rgba(220, 38, 38, ${particle.opacity * 0.5})`)
+        gradient.addColorStop(1, "rgba(185, 28, 28, 0)")
 
         ctx.fillStyle = gradient
         ctx.fill()
