@@ -17,12 +17,12 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Mystic Services",
-  description: "MysticGen | #1 Sites We are the best beaming site out there!",
+  title: "Lxrpz Gen",
+  description: "LxrpzGen | #1 Sites We are the best beaming site out there!",
   icons: {
-    icon: "👑",
-    shortcut: "👑",
-    apple: "👑",
+    icon: "/icon.svg",
+    shortcut: "/icon.svg",
+    apple: "/apple-icon.png",
   },
   generator: "v0.app",
 }

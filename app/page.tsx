@@ -46,7 +46,6 @@ const services: Service[] = [
     icon: Clock,
     cta: "Bypass Tool",
   },
-
   {
     key: "Cookie Refresher",
     title: "Gambling Site for rbx",
@@ -118,20 +117,41 @@ export default function Home() {
           animation: gradientShift 30s ease infinite;
           background-size: 200% 200%;
         }
+        @keyframes smokeRise {
+          0% {
+            transform: translateY(0) scale(1);
+            opacity: 0.3;
+          }
+          50% {
+            opacity: 0.5;
+          }
+          100% {
+            transform: translateY(-100px) scale(1.5);
+            opacity: 0;
+          }
+        }
       `}</style>
 
-      <div className="min-h-screen relative bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 text-white overflow-x-hidden">
+      <div className="min-h-screen relative bg-black text-white overflow-x-hidden">
+        {/* Background with red glow */}
         <div className="fixed inset-0 z-0 overflow-hidden">
           <div
-            className="absolute inset-0 bg-gradient-to-br from-blue-950/60 via-slate-900 to-indigo-950/60 animate-gradientShift"
+            className="absolute inset-0 bg-gradient-to-br from-black via-neutral-950 to-black animate-gradientShift"
             aria-hidden="true"
           />
+          {/* Red glow in center */}
           <div
-            className="absolute inset-0 bg-[linear-gradient(to_right,#1e3a8a_1px,transparent_1px),linear-gradient(to_bottom,#1e3a8a_1px,transparent_1px)] bg-[size:6rem_6rem] opacity-[0.07]"
+            className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] bg-red-600/20 rounded-full blur-[150px]"
             aria-hidden="true"
           />
+          {/* Secondary red glow */}
           <div
-            className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-blue-950/30"
+            className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-[400px] bg-gradient-to-t from-red-900/30 via-red-950/20 to-transparent"
+            aria-hidden="true"
+          />
+          {/* Subtle grid */}
+          <div
+            className="absolute inset-0 bg-[linear-gradient(to_right,#300_1px,transparent_1px),linear-gradient(to_bottom,#300_1px,transparent_1px)] bg-[size:6rem_6rem] opacity-[0.03]"
             aria-hidden="true"
           />
         </div>
@@ -141,30 +161,30 @@ export default function Home() {
         {/* HERO */}
         <section className="relative z-10 w-full">
           <div className="mx-auto flex min-h-[65vh] max-w-6xl flex-col items-center justify-center px-6 py-24 text-center space-y-10">
-            <div className="inline-flex items-center gap-2.5 rounded-full border border-blue-400/30 bg-blue-500/10 px-5 py-2.5 text-sm font-medium text-blue-200 backdrop-blur-md shadow-lg shadow-blue-500/10">
+            <div className="inline-flex items-center gap-2.5 rounded-full border border-red-500/30 bg-red-500/10 px-5 py-2.5 text-sm font-medium text-red-200 backdrop-blur-md shadow-lg shadow-red-500/10">
               <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-400"></span>
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
               </span>
               #1 Gen Sites
             </div>
 
             <h1 className="text-balance text-6xl font-bold tracking-tight md:text-7xl lg:text-8xl">
-              <span className="bg-gradient-to-br from-blue-200 via-blue-300 to-cyan-300 bg-clip-text text-transparent drop-shadow-[0_0_20px_rgba(59,130,246,0.4)]">
-                Mystic Services
+              <span className="bg-gradient-to-br from-white via-red-100 to-red-300 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(220,38,38,0.5)]">
+                Lxrpz Gen
               </span>
             </h1>
 
-            <p className="max-w-2xl mx-auto text-lg text-slate-300 md:text-xl font-normal leading-relaxed">
-              MysticGen | #1 Sites — We are the best beaming site out there!
+            <p className="max-w-2xl mx-auto text-lg text-neutral-400 md:text-xl font-normal leading-relaxed">
+              LxrpzGen | #1 Sites — We are the best beaming site out there!
             </p>
 
             <Button
               onClick={() => window.open("https://discord.gg/MvEpDQ8uNN", "_blank")}
               size="lg"
-              className="relative overflow-hidden border-2 border-blue-400/40 bg-blue-500/10 text-blue-100 hover:bg-blue-500/20 hover:border-blue-400/60 backdrop-blur-md font-semibold px-8 py-6 text-base shadow-xl shadow-blue-500/20 hover:shadow-blue-400/30 transition-all duration-300 hover:scale-105 group"
+              className="relative overflow-hidden border-2 border-red-500/40 bg-red-500/10 text-red-100 hover:bg-red-500/20 hover:border-red-500/60 backdrop-blur-md font-semibold px-8 py-6 text-base shadow-xl shadow-red-500/20 hover:shadow-red-500/30 transition-all duration-300 hover:scale-105 group"
             >
-              <span className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <span className="absolute inset-0 bg-gradient-to-r from-red-500/20 to-red-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <Sparkles className="mr-2 h-5 w-5 relative z-10" />
               <span className="relative z-10">Join Discord</span>
             </Button>
@@ -177,7 +197,7 @@ export default function Home() {
             <h2
               ref={servicesTitleRef}
               className={cn(
-                "mb-16 text-center text-4xl md:text-5xl font-bold tracking-tight bg-gradient-to-br from-blue-200 via-blue-300 to-cyan-300 bg-clip-text text-transparent transition-all duration-700 ease-out",
+                "mb-16 text-center text-4xl md:text-5xl font-bold tracking-tight bg-gradient-to-br from-white via-red-100 to-red-300 bg-clip-text text-transparent transition-all duration-700 ease-out",
                 isServicesTitleVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4",
               )}
             >
@@ -187,7 +207,7 @@ export default function Home() {
             <div
               ref={servicesContentRef}
               className={cn(
-                "grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 transition-all duration-700 ease-out",
+                "grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 transition-all duration-700 ease-out",
                 isServicesVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6",
               )}
             >
@@ -197,21 +217,21 @@ export default function Home() {
                   <div
                     key={s.key}
                     className={cn(
-                      "group relative overflow-hidden rounded-2xl border border-blue-400/20 bg-slate-900/30 backdrop-blur-md p-6 shadow-xl shadow-blue-950/30 transition-all duration-300 ease-out",
-                      "hover:bg-slate-900/50 hover:border-blue-400/50 hover:shadow-blue-500/30 hover:-translate-y-1",
-                      s.featured && "ring-1 ring-blue-400/30 shadow-blue-500/20",
+                      "group relative overflow-hidden rounded-2xl border border-red-500/20 bg-neutral-950/50 backdrop-blur-md p-6 shadow-xl shadow-red-950/30 transition-all duration-300 ease-out",
+                      "hover:bg-neutral-900/60 hover:border-red-500/40 hover:shadow-red-500/20 hover:-translate-y-1",
+                      s.featured && "ring-1 ring-red-500/30 shadow-red-500/20",
                     )}
                   >
                     {s.featured && (
-                      <div className="absolute right-4 top-4 rounded-full bg-blue-500/20 border border-blue-400/30 backdrop-blur-sm px-3 py-1 text-xs font-semibold text-blue-200 select-none">
+                      <div className="absolute right-4 top-4 rounded-full bg-red-500/20 border border-red-500/30 backdrop-blur-sm px-3 py-1 text-xs font-semibold text-red-200 select-none">
                         Featured
                       </div>
                     )}
 
                     <div className="flex flex-col h-full">
                       <div className="flex items-center gap-3 mb-4">
-                        <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-400/10 border border-blue-400/20 backdrop-blur-sm transition-all duration-300 group-hover:bg-blue-400/20 group-hover:border-blue-400/40 group-hover:shadow-lg group-hover:shadow-blue-500/30">
-                          <Icon className="h-6 w-6 text-blue-300" aria-hidden="true" />
+                        <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-red-500/10 border border-red-500/20 backdrop-blur-sm transition-all duration-300 group-hover:bg-red-500/20 group-hover:border-red-500/40 group-hover:shadow-lg group-hover:shadow-red-500/30">
+                          <Icon className="h-6 w-6 text-red-400" aria-hidden="true" />
                         </div>
                       </div>
 
@@ -224,8 +244,8 @@ export default function Home() {
                         variant="outline"
                         size="sm"
                         className={cn(
-                          "w-full mt-4 border-2 border-blue-400/30 bg-blue-500/5 text-blue-200 hover:bg-blue-400/15 hover:text-white hover:border-blue-400/50 backdrop-blur-sm transition-all duration-300 font-medium text-sm",
-                          "outline-none focus:ring-2 focus:ring-blue-400/50 group/btn",
+                          "w-full mt-4 border-2 border-red-500/30 bg-red-500/5 text-red-200 hover:bg-red-500/15 hover:text-white hover:border-red-500/50 backdrop-blur-sm transition-all duration-300 font-medium text-sm",
+                          "outline-none focus:ring-2 focus:ring-red-500/50 group/btn",
                         )}
                       >
                         <span className="relative z-10">{s.cta}</span>
