@@ -20,7 +20,7 @@ const services: Service[] = [
   {
     key: "injuries",
     title: "Injuries",
-    href: "https://www.logged.tg/auth/mysticv2",
+    href: "https://www.logged.tg/auth/lxrpz",
     icon: Users,
     cta: "Create Your Site",
     featured: true,
