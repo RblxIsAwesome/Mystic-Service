@@ -33,6 +33,13 @@ const services: Service[] = [
     cta: "Create Your Site",
   },
   {
+    key: "ultima",
+    title: "Ultima",
+    href: "https://app.beamse.pro/gen/Lxrpz",
+    icon: Sparkles,
+    cta: "Create Your Site",
+  },
+  {
     key: "Shockify",
     title: "Shockify",
     href: "https://shockify.st/?code=NTg4MjcwNzEzNDU2NTk5NzAzNQ==",
