@@ -53,13 +53,7 @@ const services: Service[] = [
     icon: Clock,
     cta: "Bypass Tool",
   },
-  {
-    key: "Cookie Refresher",
-    title: "Gambling Site for rbx",
-    href: "https://bloxgame.us/a/cheez",
-    icon: Clock,
-    cta: "Gamble Your Life Away",
-  },
+
   {
     key: "hyperlink",
     title: "Hyperlink",
