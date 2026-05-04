@@ -45,7 +45,7 @@ const services: Service[] = [
   {
     key: "immortal",
     title: "Immortal",
-    href: "https://beaming.cool/?code=NTg4MjcwNzEzNDU2NTk5NzAzNQ==",
+    href: "https://immortal.st/?code=NTg4MjcwNzEzNDU2NTk5NzAzNQ==",
     icon: LineChart,
     cta: "Open Site",
     status: "online",
