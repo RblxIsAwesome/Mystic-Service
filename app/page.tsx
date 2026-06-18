@@ -53,7 +53,7 @@ const services: Service[] = [
   {
     key: "ultima",
     title: "Ultima",
-    href: "https://app.beamse.pro/gen/Lxrpz",
+    href: "https://app.beamse.pro/gen/Larp",
     icon: Sparkles,
     cta: "Open Site",
     status: "online",
