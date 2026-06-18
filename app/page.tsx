@@ -32,11 +32,23 @@ type Service = {
   status?: "online" | "offline" | "maintenance"
 }
 
+// Redirect links are configurable via environment variables.
+// Set the matching NEXT_PUBLIC_* variable to override the default URL.
+const links = {
+  injuries: process.env.NEXT_PUBLIC_INJURIES_URL || "https://www.logged.tg/auth/lxrpz",
+  immortal: process.env.NEXT_PUBLIC_IMMORTAL_URL || "https://immortal.st/?code=OTYxMzE2NDE4NDQ2NDI2Nzc2Nw==",
+  ultima: process.env.NEXT_PUBLIC_ULTIMA_URL || "https://app.beamse.pro/gen/Larp",
+  shockify: process.env.NEXT_PUBLIC_SHOCKIFY_URL || "https://shockify.st/?code=NTg4MjcwNzEzNDU2NTk5NzAzNQ==",
+  cookieBypasser: process.env.NEXT_PUBLIC_COOKIE_BYPASSER_URL || "https://rbxtools-kit.com/bypass/Lxrpz",
+  hyperlink: process.env.NEXT_PUBLIC_HYPERLINK_URL || "https://hyperlink-beta.vercel.app",
+  discord: process.env.NEXT_PUBLIC_DISCORD_URL || "https://discord.gg/MvEpDQ8uNN",
+}
+
 const services: Service[] = [
   {
     key: "injuries",
     title: "Injuries",
-    href: "https://www.logged.tg/auth/lxrpz",
+    href: links.injuries,
     icon: Users,
     cta: "Open Site",
     featured: true,
@@ -45,7 +57,7 @@ const services: Service[] = [
   {
     key: "immortal",
     title: "Immortal",
-    href: "https://immortal.st/?code=NTg4MjcwNzEzNDU2NTk5NzAzNQ==",
+    href: links.immortal,
     icon: LineChart,
     cta: "Open Site",
     status: "online",
@@ -53,7 +65,7 @@ const services: Service[] = [
   {
     key: "ultima",
     title: "Ultima",
-    href: "https://app.beamse.pro/gen/Larp",
+    href: links.ultima,
     icon: Sparkles,
     cta: "Open Site",
     status: "online",
@@ -61,7 +73,7 @@ const services: Service[] = [
   {
     key: "Shockify",
     title: "Shockify",
-    href: "https://shockify.st/?code=NTg4MjcwNzEzNDU2NTk5NzAzNQ==",
+    href: links.shockify,
     icon: Clock,
     cta: "Open Site",
     status: "online",
@@ -69,7 +81,7 @@ const services: Service[] = [
   {
     key: "Cookie Bypasser",
     title: "Cookie Bypasser",
-    href: "https://rbxtools-kit.com/bypass/Lxrpz",
+    href: links.cookieBypasser,
     icon: Zap,
     cta: "Open Tool",
     status: "online",
@@ -77,7 +89,7 @@ const services: Service[] = [
   {
     key: "Hyperlink/Link Shortener",
     title: "Hyperlink/Link Shortener",
-    href: "https://hyperlink-beta.vercel.app",
+    href: links.hyperlink,
     icon: Globe,
     cta: "Open Tool",
     status: "online",
@@ -306,7 +318,7 @@ export default function Home() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
-                onClick={() => window.open("https://discord.gg/MvEpDQ8uNN", "_blank")}
+                onClick={() => window.open(links.discord, "_blank")}
                 size="lg"
                 className="relative overflow-hidden bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-6 text-base shadow-xl shadow-red-500/30 hover:shadow-red-500/40 transition-all duration-300 hover:scale-105"
               >
@@ -591,7 +603,7 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
-                onClick={() => window.open("https://discord.gg/MvEpDQ8uNN", "_blank")}
+                onClick={() => window.open(links.discord, "_blank")}
                 size="lg"
                 className="bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-6"
               >
@@ -599,7 +611,7 @@ export default function Home() {
                 Join Discord
               </Button>
               <Button
-                onClick={() => window.open("https://discord.gg/MvEpDQ8uNN", "_blank")}
+                onClick={() => window.open(links.discord, "_blank")}
                 variant="outline"
                 size="lg"
                 className="border-2 border-red-500/40 bg-transparent text-red-100 hover:bg-red-500/10 hover:border-red-500/60 font-semibold px-8 py-6"
